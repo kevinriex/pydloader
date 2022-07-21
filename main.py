@@ -3,6 +3,7 @@ from doctest import ELLIPSIS_MARKER
 from pytube import YouTube
 from pytube.cli import on_progress
 from sys import argv
+import os
 
 if __name__ == "__main__":
     if len(argv) == 1:
@@ -18,3 +19,5 @@ if __name__ == "__main__":
 
         yd = yt.streams.get_highest_resolution()
         yd.download("D:\Videos\YouTube")
+
+        os.system("pause")
